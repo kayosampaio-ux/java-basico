@@ -4,17 +4,17 @@ import java.sql.SQLOutput;
 
 public class Main {
     public static void main(String[] args) {
-        String nome = "Marta";
-        int idade = 25;
+        String nome = "Kayo";
+        int idade = 19;
 
 //        Clientes cliente1 = new Clientes();
 //
-//        cliente1.nome = "Marta";
-//        cliente1.idade = 25;
+//        cliente1.nome = "Kayo";
+//        cliente1.idade = 19;
 
         Clientes cliente1 = new Clientes();
-        cliente1.setNome("Marta");
-        cliente1.setIdade(25);
+        cliente1.setNome("Kayo");
+        cliente1.setIdade(19);
 
         System.out.println("Nome: " + cliente1.getNome());
         System.out.println("idade: " + cliente1.getIdade());
