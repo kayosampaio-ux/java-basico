@@ -1,4 +1,6 @@
-package org.example.empresa;
+package org.example.treino;
+
+import org.example.empresa.Setor;
 
 public class Funcionario {
     protected String nome;
@@ -7,13 +9,36 @@ public class Funcionario {
     protected Setor setor;
 
     @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+    }
+
+    public Funcionario() {
+        super();
+    }
+
+    @Override
     public String toString() {
         return "Funcionario{" +
                 "nome='" + nome + '\'' +
                 ", DatadeNascimento='" + DatadeNascimento + '\'' +
                 ", sexo=" + sexo +
                 ", setor=" + setor +
-                ", salarioBase=" + salarioBase +
                 '}';
     }
 
@@ -49,25 +74,10 @@ public class Funcionario {
         this.setor = setor;
     }
 
-    public Double getSalarioBase() {
-        return salarioBase;
-    }
-
-    public void setSalarioBase(Double salarioBase) {
-        this.salarioBase = salarioBase;
-    }
-
-    public Funcionario(String nome, String datadeNascimento, Sexo sexo, Setor setor, Double salarioBase) {
+    public Funcionario(String nome, String datadeNascimento, Sexo sexo, Setor setor) {
         this.nome = nome;
         DatadeNascimento = datadeNascimento;
         this.sexo = sexo;
         this.setor = setor;
-        this.salarioBase = salarioBase;
     }
-
-    public double getSalarioFinal() {
-        return 0;
-    }
-
-    protected Double salarioBase;
 }
